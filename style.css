@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+body {
     width: 100vw;  /* Ajusta para 100% da largura da janela */
     height: 100vh; /* Ajusta para 100% da altura da janela */
     font-family: Montserrat;
@@ -8,17 +8,20 @@ body{
     justify-content: center;
     align-items: center;
     background: linear-gradient(180deg, #ECE9FB, #CFC7F5);
+    overflow: hidden; /* Evita scroll */
 }
-
 
 .profile-box {
     background: linear-gradient(145deg, #f4f4f4, #e0e0e0);
     border-radius: 20px;
-    width: 1500px ;
-    height: 800px;
+    width: 100%; /* Ajusta a largura para 80% da tela */
+    max-width: 1500px; /* Limita a largura máxima */
+    height: auto; /* Ajusta a altura automaticamente */
+    max-height: 90vh; /* Limita a altura máxima */
     text-align: center;
     transition: 1s;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Adiciona padding */
 }
 
 .profile-box button {
@@ -107,5 +110,5 @@ body{
 }
 
 .profile-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
