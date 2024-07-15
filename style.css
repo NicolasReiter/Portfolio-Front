@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    width: 2100px;
+    height: 942px;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #ECE9FB, #CFC7F5);
+}
+
+
+.profile-box {
+    background: linear-gradient(145deg, #f4f4f4, #e0e0e0);
+    border-radius: 20px;
+    width: 1500px ;
+    height: 800px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-box button {
+    background-color: #6a5acd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-box button:hover {
+    background-color: #5a4cda;
+}
+
+.superior {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-inline: 60px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    width: 268px;
+}
+
+.me {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.about {
+    padding:  20px 80px 80px 80px;
+    justify-content: center;
+}
+
+.introdução {
+    font-size: 58px;
+}
+
+.cargo {
+    display: flex;
+    padding-left: 42px;
+    color: grey;
+    font-size: 18px;
+}
+
+.fazendo {
+    display: flex;
+    padding-left: 42px;
+    color: grey;
+    font-weight: 500;
+}
+
+.botão {
+    padding-top: 30px;
+    padding-right: 270px;
+}
+
+.contato {
+    width: 140px;
+    height: 50px;
+}
+
+.photo {
+    padding-top: 10px;
+    padding-right: 100px;
+}
+
+.perfil {
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 500px;
+    border-bottom-left-radius: 300px;
+    border-top-left-radius: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-box:hover {
+    transform: scale(1.05);
+}
