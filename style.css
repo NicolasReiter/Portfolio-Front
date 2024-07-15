@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    width: 2100px;
-    height: 942px;
+    width: 1920px;
+    height: 1080px;
     font-family: Montserrat;
     display: flex;
     justify-content: center;
