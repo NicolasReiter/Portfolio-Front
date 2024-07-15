@@ -9,15 +9,17 @@ body {
     align-items: center;
     background: linear-gradient(180deg, #ECE9FB, #CFC7F5);
     overflow: hidden; /* Evita scroll */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .profile-box {
     background: linear-gradient(145deg, #f4f4f4, #e0e0e0);
     border-radius: 20px;
-    width: 100%; /* Ajusta a largura para 100% da tela */
-    max-width: 1500px; /* Limita a largura máxima */
+    width: 90%; /* Ajusta a largura para 90% da tela */
+    max-width: 900px; /* Limita a largura máxima */
     height: auto; /* Ajusta a altura automaticamente */
-    max-height: 90vh; /* Limita a altura máxima */
     text-align: center;
     transition: 1s;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -42,22 +44,28 @@ body {
 .superior {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-inline: 60px;
+    padding-top: 20px;
+    padding-inline: 20px;
+    flex-wrap: wrap;
 }
 
 .social {
     display: flex;
-    justify-content: space-between;
-    width: 200px;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.social a {
+    margin: 0 10px;
 }
 
 .email > a {
     text-decoration: none;
     color: black;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
-    transition: calc(0.4s);
+    transition: 0.4s;
 }
 
 .email > a:hover {
@@ -66,37 +74,36 @@ body {
 
 .me {
     display: flex;
-    justify-content: space-between;
-    padding: 100px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .about {
-    padding: 20px 80px 80px 80px;
-    justify-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .introdução {
-    font-size: 58px;
+    font-size: 36px;
 }
 
-.cargo {
-    display: flex;
-    padding-left: 42px;
+.cargo  {
     color: grey;
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .fazendo {
     display: flex;
-    padding-left: 42px;
     color: grey;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 .botão {
-    padding-top: 30px;
-    padding-right: 270px;
+    margin-top: 20px;
 }
 
 .contato {
@@ -105,16 +112,18 @@ body {
 }
 
 .photo {
-    padding-top: 10px;
-    padding-right: 100px;
+    margin-top: 20px;
 }
 
 .perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-right-radius: 300px;
     border-bottom-right-radius: 500px;
     border-bottom-left-radius: 300px;
     border-top-left-radius: 400px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .profile-box:hover {
@@ -123,22 +132,34 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .me {
+    .superior {
         flex-direction: column;
         align-items: center;
+        padding-top: 10px;
+        padding-inline: 10px;
+    }
+
+    .social {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .email {
+        margin-top: 10px;
+        text-align: center;
     }
 
     .about {
-        padding: 20px 40px 40px 40px;
+        padding: 20px;
         text-align: center;
     }
 
     .introdução {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .cargo, .fazendo {
-        padding-left: 0;
+        font-size: 14px;
         text-align: center;
     }
 
@@ -147,12 +168,12 @@ body {
     }
 
     .photo {
-        padding: 20px 0;
+        padding-top: 20px;
         text-align: center;
     }
 
     .perfil {
-        width: 80%;
-        max-width: 300px;
+        width: 150px;
+        height: 150px;
     }
 }
