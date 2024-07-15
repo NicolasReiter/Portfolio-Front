@@ -14,7 +14,7 @@ body {
 .profile-box {
     background: linear-gradient(145deg, #f4f4f4, #e0e0e0);
     border-radius: 20px;
-    width: 100%; /* Ajusta a largura para 80% da tela */
+    width: 100%; /* Ajusta a largura para 100% da tela */
     max-width: 1500px; /* Limita a largura máxima */
     height: auto; /* Ajusta a altura automaticamente */
     max-height: 90vh; /* Limita a altura máxima */
@@ -32,6 +32,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 .profile-box button:hover {
@@ -51,20 +52,27 @@ body {
     width: 200px;
 }
 
-.email {
-    display: flex;
-    justify-content: space-between;
-    width: 268px;
+.email > a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    transition: calc(0.4s);
+}
+
+.email > a:hover {
+    letter-spacing: 1px;    
 }
 
 .me {
     display: flex;
     justify-content: space-between;
     padding: 100px;
+    flex-wrap: wrap;
 }
 
 .about {
-    padding:  20px 80px 80px 80px;
+    padding: 20px 80px 80px 80px;
     justify-content: center;
 }
 
@@ -111,4 +119,40 @@ body {
 
 .profile-box:hover {
     transform: scale(1.01);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        padding: 20px 40px 40px 40px;
+        text-align: center;
+    }
+
+    .introdução {
+        font-size: 40px;
+    }
+
+    .cargo, .fazendo {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .botão {
+        padding-right: 0;
+    }
+
+    .photo {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .perfil {
+        width: 80%;
+        max-width: 300px;
+    }
 }
